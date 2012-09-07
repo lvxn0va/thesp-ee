@@ -6,6 +6,7 @@
     <title><%= content_for?(:title) ? yield(:title) : "Thesp[EE]" %></title>
     <meta name="description" content=""/>
     <meta name="author" content=""/>
+    <%= raw content_for?(:prehead) ? yield(:prehead) : "" %>
     <%= stylesheet_link_tag    "application", :media => "all" %>
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
@@ -31,6 +32,7 @@
           <footer>
           </footer>
         </div>
+        <p>&copy; thesp [EE] 2012-2013 - All Rights Reserved</p>
       </div> <!--! end of .container -->
     </div> <!--! end of #main -->
   </body>
