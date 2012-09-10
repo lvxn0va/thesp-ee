@@ -1,0 +1,15 @@
+<% title "Reviews" %>
+
+<table>
+  <tr>
+    <th>Title</th>
+  </tr>
+  <% for review in @reviews %>
+    <tr>
+      <td><%= review.title %></td>
+      <td><%= link_to "Edit", edit_review_path(review) %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Review", new_review_path %></p>

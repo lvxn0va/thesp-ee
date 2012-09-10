@@ -1,0 +1,25 @@
+<% title "Schools" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Zip</th>
+    <th>Phone</th>
+  </tr>
+  <% for school in @schools %>
+    <tr>
+      <td><%= school.name %></td>
+      <td><%= school.address %></td>
+      <td><%= school.city %></td>
+      <td><%= school.state %></td>
+      <td><%= school.zip %></td>
+      <td><%= school.phone %></td>
+      <td><%= link_to "Edit", edit_school_path(school) %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New School", new_school_path %></p>

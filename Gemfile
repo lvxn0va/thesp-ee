@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 gem 'rails', '3.2.8'
 gem 'sqlite3'
+gem "nifty-generators"
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
@@ -23,3 +24,5 @@ gem "hub", ">= 1.10.2", :require => nil, :group => [:development]
 
 gem "compass"
 gem "compass-rails"
+
+gem "mocha", :group => :test

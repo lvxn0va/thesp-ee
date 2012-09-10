@@ -1,4 +1,8 @@
 ThespEe::Application.routes.draw do
+  resources :schools
+
+  resources :reviews
+
   authenticated :user do
     root :to => 'home#index'
   end
